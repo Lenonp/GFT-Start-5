@@ -2,11 +2,15 @@ package BancoGft;
 
 public class ContaPoupanca extends Conta {
     
-    public contaPoupanca(){
-
+    public ContaPoupanca(Nome nome) {
+        super(nome);
+        //TODO Auto-generated constructor stub
     }
 
-    public void gerarRendimento(){
-        saldo += saldo * 0.03;
+    @Override
+    public void imprimirExtrato() {
+        System.out.println(" === Extrato Conta Poupança ===");
+        super.ImprimirInfosComuns();
     }
+
 }

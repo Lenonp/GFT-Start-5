@@ -2,12 +2,14 @@ package BancoGft;
 
 public class ContaCorrente extends Conta{
 
-    public contaCorrente(){
-
+    public ContaCorrente(Nome nome) {
+        super(nome);
+        //TODO Auto-generated constructor stub
     }
 
-    public void gerarRendimento(){
-        saldo += saldo * 0.03;
+    @Override
+    public void imprimirExtrato() {
+        System.out.println(" === Extrato Conta Corrente ===");
+        super.ImprimirInfosComuns();
+
     }
-    
-}
